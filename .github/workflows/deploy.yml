@@ -26,6 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Debug Secret
+        run: echo "Secret is present: ${{ env.PUBLIC_GOOGLE_SCRIPT_URL != '' }}"
+        env:
+          PUBLIC_GOOGLE_SCRIPT_URL: ${{ secrets.PUBLIC_GOOGLE_SCRIPT_URL }}
+
       - name: Build
         run: npm run build
         env:

@@ -395,7 +395,7 @@ function setupForm() {
       return;
     }
 
-    if (!scriptUrl || scriptUrl.includes("REPLACE")) {
+    if (!scriptUrl || scriptUrl.includes("REPLACE_ME")) {
       showToast("Setup Error: Google URL missing", "error");
       return;
     }
