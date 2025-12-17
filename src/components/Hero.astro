@@ -1,0 +1,94 @@
+<section id="home" class="pt-20 relative overflow-hidden">
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-500 to-blue-700 bg-gradient-animate opacity-90"
+  >
+  </div>
+  <div class="absolute inset-0 tooth-pattern"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-white reveal active">
+        <div class="inline-block mb-4">
+          <span
+            class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold border border-white/30"
+            data-i18n="hero.badge"></span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <span data-i18n="hero.title1"></span><br />
+          <span data-i18n="hero.title2" class="text-cyan-300"></span>
+        </h1>
+        <p
+          data-i18n="hero.desc"
+          class="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed"
+        >
+        </p>
+        <div class="flex flex-col items-center sm:flex-row gap-4">
+          <a
+            href="#booking"
+            class="inline-flex items-center justify-center bg-white text-blue-600 px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-blue-50 transition shadow-xl hover:shadow-2xl transform hover:scale-105"
+          >
+            <i class="ri-calendar-check-line mr-2"></i>
+            <span data-i18n="hero.btn_book"></span>
+          </a>
+        </div>
+        <div class="mt-12 flex items-center space-x-4 sm:space-x-8">
+          <div>
+            <p class="text-3xl sm:text-4xl font-bold">500+</p><p
+              id="stat-label-1"
+              class="text-sm sm:text-base text-blue-200"
+            >
+            </p>
+          </div>
+          <div class="h-12 w-px bg-white/30"></div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-bold">100%</p><p
+              id="stat-label-2"
+              class="text-sm sm:text-base text-blue-200"
+            >
+            </p>
+          </div>
+          <div class="h-12 w-px bg-white/30"></div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-bold">5★</p><p
+              id="stat-label-3"
+              class="text-sm sm:text-base text-blue-200"
+            >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block animate-float">
+        <div class="relative">
+          <div
+            class="absolute inset-0 bg-white/20 backdrop-blur-xl rounded-3xl rotate-6"
+          >
+          </div>
+          <div
+            class="relative bg-white/90 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/50"
+          >
+            <h3
+              data-i18n="hero.why_title"
+              class="text-2xl font-bold text-gray-800 mb-4 text-center"
+            >
+            </h3>
+            <div id="features-list" class="space-y-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>

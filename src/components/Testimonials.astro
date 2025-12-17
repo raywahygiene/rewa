@@ -1,0 +1,36 @@
+<style>
+    .testimonial-card {
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .testimonial-card:before {
+        font-family: 'Remixicon';
+        content: '\\ea12';
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        font-size: 100px;
+        color: rgba(229, 231, 235, 0.5);
+        transform: rotate(-15deg);
+        z-index: 1;
+        opacity: 0.8;
+    }
+</style>
+
+<section id="testimonials" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-blue-600 font-bold tracking-wider text-sm uppercase mb-3 block">Testimonials</span>
+            <h2 data-i18n="testimonials.title" class="text-4xl md:text-5xl font-bold text-slate-900 mb-6"></h2>
+            <p data-i18n="testimonials.subtitle" class="text-xl text-slate-500 max-w-2xl mx-auto"></p>
+        </div>
+
+        <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonials will be dynamically inserted here by main.js -->
+        </div>
+    </div>
+</section>

@@ -1,0 +1,72 @@
+<nav id="main-nav" class="fixed w-full top-0 z-50 py-4 bg-transparent border-b border-transparent transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-br from-blue-600 to-cyan-500 p-2 rounded-xl shadow-lg">
+                    <i class="ri-capsule-fill text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Mobile Dental</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="flex items-center gap-6">
+                <div class="relative hidden md:block">
+                    <i class="ri-global-line absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <select id="lang-selector" class="pl-9 pr-8 py-2 bg-slate-100/80 backdrop-blur-sm rounded-full text-sm font-semibold text-slate-600 outline-none cursor-pointer hover:bg-white transition shadow-sm"></select>
+                </div>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#home" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition" data-i18n="nav.home"></a>
+                    <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition" data-i18n="nav.services"></a>
+                    <a href="#testimonials" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition" data-i18n="nav.reviews"></a>
+                    <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition" data-i18n="nav.contact"></a>
+                    <a href="#booking" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-full hover:bg-blue-600 transition shadow-lg hover:-translate-y-0.5" data-i18n="nav.book"></a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-700 p-2 focus:outline-none">
+                    <i class="ri-menu-4-line transition-transform duration-300"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Container (Animated) -->
+    <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-t border-slate-100 shadow-xl md:hidden closed">
+        <div class="px-4 py-6 space-y-4">
+            <a href="#home" class="mobile-link block px-4 py-3 rounded-xl text-slate-600 hover:bg-blue-50 hover:text-blue-600 font-semibold transition" data-i18n="nav.home"></a>
+            <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-slate-600 hover:bg-blue-50 hover:text-blue-600 font-semibold transition" data-i18n="nav.services"></a>
+            <a href="#testimonials" class="mobile-link block px-4 py-3 rounded-xl text-slate-600 hover:bg-blue-50 hover:text-blue-600 font-semibold transition" data-i18n="nav.reviews"></a>
+            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl text-slate-600 hover:bg-blue-50 hover:text-blue-600 font-semibold transition" data-i18n="nav.contact"></a>
+            
+            <div class="px-4 py-2 border-t border-slate-100 mt-4 pt-4">
+                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 block">Language</label>
+                <select id="mobile-lang-selector" class="w-full p-3 bg-slate-100 rounded-xl text-slate-700 font-semibold outline-none"></select>
+            </div>
+
+            <a href="#booking" class="mobile-link block text-center px-4 py-4 bg-slate-900 text-white font-bold rounded-xl shadow-lg mt-4 active:scale-95 transition-transform" data-i18n="nav.book"></a>
+        </div>
+    </div>
+</nav>
+
+<style>
+/* Nav Transition Logic */
+#main-nav { transition: all 0.4s ease-in-out; }
+
+/* Mobile Menu Smooth Transition */
+#mobile-menu {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+#mobile-menu.closed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+#mobile-menu.open {
+    max-height: 100vh;
+    opacity: 1;
+    pointer-events: auto;
+}
+</style>

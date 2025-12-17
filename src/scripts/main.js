@@ -152,32 +152,38 @@ function renderServices(services) {
 }
 
 function renderTestimonials(reviews) {
-  const container = document.getElementById("testimonials-grid");
-  if (!container) return;
-  container.innerHTML = reviews
-    .map(
-      (r, index) => `
-        <div class="reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative" style="transition-delay: ${
-          index * 100
-        }ms">
-            <div class="text-yellow-400 text-sm mb-4">
-                ${Array(r.stars).fill('<i class="ri-star-fill"></i>').join("")}
+    const container = document.getElementById("testimonials-container");
+    if (!container) return;
+
+    if (!reviews || reviews.length === 0) {
+        container.innerHTML = "";
+        return;
+    }
+
+    container.innerHTML = reviews.map((r, index) => `
+        <div class="testimonial-card reveal bg-white rounded-2xl shadow-lg p-8 border border-slate-100 h-full" style="transition-delay: ${index * 100}ms">
+            <div class="relative z-10">
+                <div class="text-yellow-400 text-lg mb-6">
+                    ${Array(r.stars).fill('<i class="ri-star-fill"></i>').join("")}
+                </div>
+                <p class="text-slate-600 italic leading-relaxed mb-8 text-base">"${r.quote}"</p>
             </div>
-            <p class="text-slate-600 mb-6 italic">"${r.quote}"</p>
-            <div class="flex items-center">
-                <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold mr-3">
+            <div class="relative z-10 mt-auto flex items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-lg mr-4">
                     ${r.name.charAt(0)}
                 </div>
                 <div>
-                    <h4 class="font-bold text-slate-900 text-sm">${r.name}</h4>
-                    <p class="text-slate-400 text-xs">${r.role}</p>
+                    <h4 class="font-bold text-slate-900">${r.name}</h4>
+                    <p class="text-slate-500 text-sm">${r.role}</p>
                 </div>
             </div>
         </div>
-    `
-    )
-    .join("");
+    `).join("");
+    
+    // Re-trigger scroll animations for the new content
+    observeElements();
 }
+
 
 function renderFooter(footerData, socials, contactData) {
   const about = document.querySelector('[data-i18n="footer.about_desc"]');
