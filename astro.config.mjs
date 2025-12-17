@@ -3,7 +3,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://raywahygiene.github.io",
-  base: "/rewa",
+  site: "https://www.raywahygiene.ca",
   integrations: [tailwind()],
 });
