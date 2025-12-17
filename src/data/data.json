@@ -1,0 +1,389 @@
+{
+  "config": {
+    "googleScriptUrl": "",
+    "defaultLang": "en",
+    "socials": [
+      { "icon": "ri-facebook-circle-fill", "link": "#" },
+      {
+        "icon": "ri-instagram-line",
+        "link": "https://www.instagram.com/raywahygiene.dental/?igsh=MWNlNzFpMDJoeG0wZA%3D%3D#"
+      }
+    ]
+  },
+  "languages": {
+    "en": "🇺🇸 English",
+    "fr": "🇫🇷 Français",
+    "bo": "🇪🇸 བོད་ཡིག"
+  },
+  "translations": {
+    "en": {
+      "nav": {
+        "home": "Home",
+        "services": "Services",
+        "reviews": "Reviews",
+        "book": "Book Now",
+        "contact": "Contact"
+      },
+      "hero": {
+        "badge": "⭐ Premium Mobile Service",
+        "title1": "Your Smile,",
+        "title2": "Our Priority",
+        "desc": "Professional dental hygiene services delivered directly to your home. Experience comfort, convenience, and quality care.",
+        "btn_book": "Book Appointment",
+        "stats": {
+          "clients": "Happy Clients",
+          "satisfaction": "Satisfaction",
+          "rating": "Rated Service"
+        },
+        "why_title": "Why Choose Us?",
+        "features": [
+          { "icon": "ri-shield-check-line", "text": "Licensed Professionals" },
+          {
+            "icon": "ri-briefcase-4-line",
+            "text": "State-of-the-Art Equipment"
+          },
+          { "icon": "ri-time-line", "text": "Flexible Scheduling" }
+        ]
+      },
+      "services": {
+        "title": "Premium Treatments",
+        "subtitle": "Curated dental services designed for your comfort and health.",
+        "list": [
+          {
+            "title": "Check-up & Assessment",
+            "desc": "Full oral health evaluation including gum health check.",
+            "icon": "ri-microscope-line",
+            "color": "blue"
+          },
+          {
+            "title": "Deep Scaling",
+            "desc": "Ultrasonic removal of plaque and tartar buildup.",
+            "icon": "ri-tooth-line",
+            "color": "cyan"
+          },
+          {
+            "title": "Teeth Whitening",
+            "desc": "Professional grade whitening for a brighter smile.",
+            "icon": "ri-sparkling-2-line",
+            "color": "indigo"
+          },
+          {
+            "title": "Polishing",
+            "desc": "Gentle air-polishing to remove surface stains.",
+            "icon": "ri-magic-line",
+            "color": "sky"
+          },
+          {
+            "title": "Fluoride Therapy",
+            "desc": "Enamel strengthening treatment to prevent cavities.",
+            "icon": "ri-drop-line",
+            "color": "teal"
+          },
+          {
+            "title": "Education",
+            "desc": "Personalized coaching on brushing techniques.",
+            "icon": "ri-book-open-line",
+            "color": "emerald"
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Patient Stories",
+        "subtitle": "Don't just take our word for it.",
+        "list": [
+          {
+            "name": "Tsering Wangmo",
+            "role": "Busy RN",
+            "quote": "The service was so great, I would say the best and most convenient service ever. For people those are not able to visit the dental clinic due to busy schedules and not able to get dental cleaning done on time , it’s your best option to ask this service to be at your door step for the treatment. No need of waiting at the queue and travel to visit the clinic for dental hygiene . I did mine and totally happy with the service. I would book appointment again for my dental hygiene. Highly recommended for everyone 🙌",
+            "stars": 5
+          },
+          {
+            "name": "Tenzin Norbu",
+            "role": "Student",
+            "quote": "5-star experience! The doctor was absolutely awesome, incredibly polite, understanding, and provided top-notch service. I felt at ease throughout the entire teeth cleaning process. Highly recommend👍",
+            "stars": 5
+          },
+          {
+            "name": "Tenzin Passang",
+            "role": "Designer",
+            "quote": "Great experience! The hygienist was friendly, professional, and made the cleaning super easy and comfortable. I love how convenient the mobile service is.",
+            "stars": 5
+          }
+        ]
+      },
+      "booking": {
+        "title": "Book Your Visit",
+        "subtitle": "Tell us where and when, and we'll take care of the rest.",
+        "labels": {
+          "first": "First Name",
+          "last": "Last Name",
+          "email": "Email",
+          "phone": "Phone",
+          "message": "Address / Notes"
+        },
+        "btn_submit": "Confirm Booking",
+        "btn_sending": "Processing...",
+        "success_msg": "We will be in touch shortly to confirm!",
+        "error_msg": "Connection error. Please try again."
+      },
+      "footer": {
+        "about_desc": "Bringing the dental clinic to the comfort of your home.",
+        "links_title": "Explore",
+        "contact_title": "Contact",
+        "copyright": "© 2025 Mobile Dental."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "email": "raywahygiene@gmail.com",
+        "phone": "(437) 220-2538"
+      }
+    },
+    "fr": {
+      "nav": {
+        "home": "Accueil",
+        "services": "Services",
+        "reviews": "Avis",
+        "book": "Réserver",
+        "contact": "Contact"
+      },
+      "hero": {
+        "badge": "⭐ Service Mobile Premium",
+        "title1": "Votre Sourire,",
+        "title2": "Notre Priorité",
+        "desc": "Services d'hygiène dentaire professionnelle directement chez vous.",
+        "btn_book": "Prendre Rendez-vous",
+        "stats": {
+          "clients": "Clients Heureux",
+          "satisfaction": "Satisfaction",
+          "rating": "Service Noté"
+        },
+        "why_title": "Pourquoi Nous Choisir?",
+        "features": [
+          { "icon": "ri-shield-check-line", "text": "Professionnels Agréés" },
+          { "icon": "ri-briefcase-4-line", "text": "Équipement de Pointe" },
+          { "icon": "ri-time-line", "text": "Horaires Flexibles" }
+        ]
+      },
+      "services": {
+        "title": "Nos Services",
+        "subtitle": "Services dentaires conçus pour votre confort.",
+        "list": [
+          {
+            "title": "Bilan Complet",
+            "desc": "Évaluation complète de la santé bucco-dentaire.",
+            "icon": "ri-microscope-line",
+            "color": "blue"
+          },
+          {
+            "title": "Détartrage",
+            "desc": "Élimination ultrasonique de la plaque et du tartre.",
+            "icon": "ri-tooth-line",
+            "color": "cyan"
+          },
+          {
+            "title": "Blanchiment",
+            "desc": "Blanchiment professionnel pour un sourire éclatant.",
+            "icon": "ri-sparkling-2-line",
+            "color": "indigo"
+          },
+          {
+            "title": "Polissage",
+            "desc": "Polissage doux pour éliminer les taches.",
+            "icon": "ri-magic-line",
+            "color": "sky"
+          },
+          {
+            "title": "Fluorure",
+            "desc": "Traitement pour renforcer l'émail.",
+            "icon": "ri-drop-line",
+            "color": "teal"
+          },
+          {
+            "title": "Éducation",
+            "desc": "Conseils d'experts sur le brossage.",
+            "icon": "ri-book-open-line",
+            "color": "emerald"
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Avis Patients",
+        "subtitle": "Ce que disent nos clients.",
+        "list": [
+          {
+            "name": "Sarah J.",
+            "role": "Maman",
+            "quote": "Incroyable service! Ils sont venus chez moi, très pratique.",
+            "stars": 5
+          },
+          {
+            "name": "Michael C.",
+            "role": "Ingénieur",
+            "quote": "Plus de salle d'attente. Un gain de temps énorme.",
+            "stars": 5
+          },
+          {
+            "name": "Emma W.",
+            "role": "Designer",
+            "quote": "Mes dents sont plus blanches que jamais.",
+            "stars": 5
+          }
+        ]
+      },
+      "booking": {
+        "title": "Réserver",
+        "subtitle": "Dites-nous où et quand.",
+        "labels": {
+          "first": "Prénom",
+          "last": "Nom",
+          "email": "Email",
+          "phone": "Téléphone",
+          "message": "Adresse / Notes"
+        },
+        "btn_submit": "Confirmer",
+        "btn_sending": "Envoi...",
+        "success_msg": "Demande reçue!",
+        "error_msg": "Erreur de connexion."
+      },
+      "footer": {
+        "about_desc": "La clinique dentaire chez vous.",
+        "links_title": "Explorer",
+        "contact_title": "Contact",
+        "copyright": "© 2025 Mobile Dental."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "email": "bonjour@mobiledental.com",
+        "phone": "(555) 012-3456"
+      }
+    },
+    "bo": {
+      "nav": {
+        "home": "ཁྱིམ་ངོས།",
+        "services": "ཞབས་ཞུ།",
+        "reviews": "བསྐྱར་ཞིབ།",
+        "book": "ད་ལྟ་སྔོན་འགོད།",
+        "contact": "འབྲེལ་གཏུག"
+      },
+      "hero": {
+        "badge": "⭐ དྲག་ཆས་འགྲུལ་འཁོར་ཞབས་ཞུ།",
+        "title1": "ཁྱེད་ཀྱི་འཛུམ་སྤྲོ།",
+        "title2": "ང་ཚོའི་གཙོ་བོ།",
+        "desc": "ཁྱེད་ཀྱི་ཁྱིམ་དུ་ཐད་ཀར་འབྱོར་བའི་སྤྱི་ཚོགས་སོ་བཅོས་གཙང་སྦྲའི་ཞབས་ཞུ། བདེ་བ་དང་དལ་འགྱུར། ཁྱད་ཆོས་ལྡན་པའི་སྔོན་འཛིན་བྱེད་པ།",
+        "btn_book": "དུས་ཚོད་སྔོན་འགོད།",
+        "stats": {
+          "clients": "སེམས་སྐྱིད་ལས་ཁུངས་པ།",
+          "satisfaction": "ངོ་སྤྲོད།",
+          "rating": "བརྟག་དཔྱད་ཞབས་ཞུ།"
+        },
+        "why_title": "ཅིའི་ཕྱིར་ང་ཚོ་འདེམས།",
+        "features": [
+          {
+            "icon": "ri-shield-check-line",
+            "text": "ཆོག་མཆན་ལྡན་པའི་མཁས་པ།"
+          },
+          {
+            "icon": "ri-briefcase-4-line",
+            "text": "གསར་པའི་ལག་ཆས།"
+          },
+          {
+            "icon": "ri-time-line",
+            "text": "འགྱུར་ལྡན་དུས་ཚོད་འགོད་པ།"
+          }
+        ]
+      },
+      "services": {
+        "title": "དྲག་ཆས་བཅོས་ཐབས།",
+        "subtitle": "ཁྱེད་ཀྱི་བདེ་བ་དང་འཕྲོད་བསྟེན་ལ་དམིགས་པའི་སོ་བཅོས་ཞབས་ཞུ།",
+        "list": [
+          {
+            "title": "ཞིབ་བཤེར་དང་བརྟག་དཔྱད།",
+            "desc": "ཁ་ནང་གི་འཕྲོད་བསྟེན་ཁྱོན་ཡོངས་ཀྱི་བརྟག་དཔྱད་སྙིང་རྩ་གཞོགས་པ།",
+            "icon": "ri-microscope-line",
+            "color": "blue"
+          },
+          {
+            "title": "ཟབ་མོའི་གཙང་སྦྲ།",
+            "desc": "རླུང་ཐོག་གི་ཐབས་ལམ་བརྒྱུད་སོའི་ཚ་རྡུལ་བསལ་བ།",
+            "icon": "ri-tooth-line",
+            "color": "cyan"
+          },
+          {
+            "title": "སོ་དཀར་བཟོ་བ།",
+            "desc": "སྤྱི་ཚོགས་ཚད་ལྡན་སོ་དཀར་བྱེད་ཐབས།",
+            "icon": "ri-sparkling-2-line",
+            "color": "indigo"
+          },
+          {
+            "title": "གཙང་མ་བཟོ་བ།",
+            "desc": "ཇམ་པོའི་གློག་རླུང་གཙང་སྦྲས་ཕྱི་རིམ་ཚ་རྡུལ་བསལ་བ།",
+            "icon": "ri-magic-line",
+            "color": "sky"
+          },
+          {
+            "title": "ཕོ་ལོ་རོ་སྨན་བཅོས།",
+            "desc": "སོའི་དཔུང་པ་བརྟན་པོ་བཟོ་བའི་བཅོས་ཐབས།",
+            "icon": "ri-drop-line",
+            "color": "teal"
+          },
+          {
+            "title": "ཤེས་རིག་སློབ་ཁྲིད།",
+            "desc": "གང་ཟག་དམིགས་བསལ་སོ་བཤེར་ཐབས་ཇུས།",
+            "icon": "ri-book-open-line",
+            "color": "emerald"
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "ནད་གཞིའི་གཏམ་རྒྱུད།",
+        "subtitle": "ང་ཚོའི་ཚིག་ཁོ་ན་མི་དགོས།",
+        "list": [
+          {
+            "name": "སེ་ར་ཇེན་ཀིན་སི།",
+            "role": "འཛུལ་བའི་ཨ་མ།",
+            "quote": "ཧ་ཅང་དལ་འགྱུར། ང་ཁ་ལག་བཟོ་བའི་སྐབས་ངའི་ཁྱིམ་གྱི་གཙང་ཁང་དུ་ང་ཚོའི་བྱིས་པའི་སོ་བཤེར་བྱས།",
+            "stars": 5
+          },
+          {
+            "name": "མའེ་ཁལ་ཆེན།",
+            "role": "མཉེན་ཆས་དཔེ་སྐྲུན་པ།",
+            "quote": "ང་འགུག་ཁང་ལ་དགའ་པོ་མིན། ཞབས་ཞུ་འདིས་ང་ལ་འགྲུལ་བཞུད་ཆུ་ཚོད་༢ བསྐྱལ་སོང་། ཧ་ཅང་གི་བསྔགས་འོས།",
+            "stars": 5
+          },
+          {
+            "name": "ཨེ་མ་ཝིལ་སོན།",
+            "role": "འགོད་པ་བཀོད་མཁན།",
+            "quote": "ངའི་སོ་འདི་བས་དཀར་བ་ཡོང་མ་མྱོང་། བཅོས་མཁན་ཧ་ཅང་འཇམ་ཞིང་སྤྱི་ཚོགས་ཚད་ལྡན།",
+            "stars": 5
+          }
+        ]
+      },
+      "booking": {
+        "title": "ཁྱེད་ཀྱི་འཚམས་འདྲི་སྔོན་འགོད།",
+        "subtitle": "ང་ཚོར་གང་དུ་དང་ནམ་བརྗོད་ན། ང་ཚོས་ལྷག་མ་དོ་དམ་བྱེད།",
+        "labels": {
+          "first": "མདུན་མིང་།",
+          "last": "རིགས་མིང་།",
+          "email": "གློག་འཕྲིན།",
+          "phone": "ཁ་པར།",
+          "message": "ཁྱིམ་གནས་ / མཆན་བུ།"
+        },
+        "btn_submit": "སྔོན་འགོད་གཏན་འབེབས།",
+        "btn_sending": "སྒྲིག་བཞིན་པ...",
+        "success_msg": "ང་ཚོས་མྱུར་དུ་གཏན་འབེབས་བྱེད་པར་འབྲེལ་གཏུག་བྱེད་ངེས།",
+        "error_msg": "འབྲེལ་མཐུད་ནོར་འཁྲུལ། ཡང་བསྐྱར་ཚོད་ལྟ།"
+      },
+      "footer": {
+        "about_desc": "སོ་བཅོས་ཁང་ཁྱེད་ཀྱི་ཁྱིམ་གྱི་བདེ་བ་ལ་འཁྱེར་བ།",
+        "links_title": "འཚོལ་ཞིབ།",
+        "contact_title": "འབྲེལ་གཏུག",
+        "copyright": "© ༢༠༢༥ འགྲུལ་འཁོར་སོ་བཅོས།"
+      },
+      "contact": {
+        "title": "ང་ཚོར་འབྲེལ་གཏུག",
+        "email": "hello@mobiledental.com",
+        "phone": "(555) 012-3456"
+      }
+    }
+  }
+}
