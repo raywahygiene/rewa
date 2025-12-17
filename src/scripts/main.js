@@ -326,17 +326,74 @@ function showToast(message, type = "success") {
   }, 5000);
 }
 
+function validateField(input, check, message) {
+  const errorEl = input.nextElementSibling;
+  if (!check(input.value)) {
+    input.classList.add("border-red-400", "focus:border-red-500");
+    errorEl.textContent = message;
+    return false;
+  } else {
+    input.classList.remove("border-red-400", "focus:border-red-500");
+    errorEl.textContent = "";
+    return true;
+  }
+}
+
 function setupForm() {
   const form = document.getElementById("bookingForm");
   if (!form) return;
+
   const btn = document.getElementById("submitBtn");
   const btnText = document.getElementById("btn-submit-text");
   const btnIcon = document.getElementById("btn-submit-icon");
+
+  const fields = {
+    firstName: {
+      input: form.querySelector('[name="firstName"]'),
+      check: (val) => val.trim() !== "",
+      message: "First name is required.",
+    },
+    lastName: {
+      input: form.querySelector('[name="lastName"]'),
+      check: (val) => val.trim() !== "",
+      message: "Last name is required.",
+    },
+    email: {
+      input: form.querySelector('[name="email"]'),
+      check: (val) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val),
+      message: "Please enter a valid email.",
+    },
+    phone: {
+      input: form.querySelector('[name="phone"]'),
+      check: (val) => /^\D*(\d{3})\D*\D*(\d{3})\D*(\d{4})\D*$/.test(val),
+      message: "Please enter a valid phone number.",
+    },
+  };
+
+  // Real-time validation on input
+  for (const field of Object.values(fields)) {
+    field.input.addEventListener("input", () => {
+      validateField(field.input, field.check, field.message);
+    });
+  }
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const t = allData.translations[currentLang];
     const scriptUrl = allData.config.googleScriptUrl;
+
+    // Run all validations on submit
+    let isFormValid = true;
+    for (const field of Object.values(fields)) {
+      if (!validateField(field.input, field.check, field.message)) {
+        isFormValid = false;
+      }
+    }
+
+    if (!isFormValid) {
+      showToast("Please correct the errors in the form.", "error");
+      return;
+    }
 
     if (!scriptUrl || scriptUrl.includes("REPLACE")) {
       showToast("Setup Error: Google URL missing", "error");
@@ -355,6 +412,10 @@ function setupForm() {
       .then(() => {
         showToast(t.booking.success_msg, "success");
         form.reset();
+        // Clear validation states
+        for (const field of Object.values(fields)) {
+          validateField(field.input, () => true, "");
+        }
       })
       .catch(() => {
         showToast(t.booking.error_msg, "error");
