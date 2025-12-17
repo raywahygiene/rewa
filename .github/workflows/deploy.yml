@@ -27,9 +27,7 @@ jobs:
         run: npm ci
 
       - name: Debug Secret
-        run: echo "Secret is present: ${{ env.PUBLIC_GOOGLE_SCRIPT_URL != '' }}"
-        env:
-          PUBLIC_GOOGLE_SCRIPT_URL: ${{ secrets.PUBLIC_GOOGLE_SCRIPT_URL }}
+        run: echo "Secret is present: ${{ secrets.PUBLIC_GOOGLE_SCRIPT_URL != '' }}"
 
       - name: Build
         run: npm run build
