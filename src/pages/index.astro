@@ -4,7 +4,9 @@ import '../styles/global.css';
 
 // Create a deep copy to ensure the object is mutable
 const data = JSON.parse(JSON.stringify(jsonData));
-data.config.googleScriptUrl = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL;
+const googleScriptUrl = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL;
+console.log(`[Astro Build Debug] Google Script URL found: ${googleScriptUrl}`);
+data.config.googleScriptUrl = googleScriptUrl;
 ---
 <!DOCTYPE html>
 <html lang="en">
