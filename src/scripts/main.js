@@ -108,7 +108,9 @@ function renderFeatures(features) {
     .map(
       (f) => `
         <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl">
-            <i class="${f.icon} text-blue-600 text-2xl"></i>
+            <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center">
+                <img src="/assets/${f.icon}.svg" alt="" class="w-7 h-7" />
+            </div>
             <span class="text-gray-700 font-medium">${f.text}</span>
         </div>
     `
@@ -139,7 +141,7 @@ function renderServices(services) {
           index * 50
         }ms">
             <div class="w-14 h-14 rounded-2xl ${colorClass} flex items-center justify-center transition-all duration-300 mb-6">
-                <i class="${s.icon} text-2xl"></i>
+            <img src="/assets/${s.icon}" alt="${s.title} icon" class="w-8 h-8" />
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">${
               s.title

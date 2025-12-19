@@ -1,59 +1,108 @@
 ---
-import jsonData from '../../src/data/data.json';
-import '../styles/global.css';
-import Nav from '../components/Nav.astro';
-import Hero from '../components/Hero.astro';
-import Testimonials from '../components/Testimonials.astro';
-import Booking from '../components/Booking.astro';
-import Footer from '../components/Footer.astro';
+import jsonData from "../../src/data/data.json";
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Booking from "../components/Booking.astro";
+import Footer from "../components/Footer.astro";
 
 // Create a deep copy to ensure the object is mutable
 const data = JSON.parse(JSON.stringify(jsonData));
 data.config.googleScriptUrl = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Dental Care</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raywa Hygiene</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <style>
-        html { scroll-behavior: smooth; }
-        
-        /* Reveal on Scroll */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        
-        /* Background Animations */
-        @keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-        .bg-gradient-animate { background-size: 200% 200%; animation: gradient 15s ease infinite; }
-        
-        .tooth-pattern {
-            background-image: radial-gradient(circle at 20px 20px, rgba(59, 130, 246, 0.05) 2px, transparent 0);
-            background-size: 40px 40px;
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Reveal on Scroll */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Background Animations */
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
         }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .bg-gradient-animate {
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+      }
+
+      .tooth-pattern {
+        background-image: radial-gradient(
+          circle at 20px 20px,
+          rgba(59, 130, 246, 0.05) 2px,
+          transparent 0
+        );
+        background-size: 40px 40px;
+      }
     </style>
-</head>
-<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+  </head>
+  <body class="bg-slate-50 font-sans text-slate-800 antialiased">
     <script define:vars={{ data }}>
-        window.APP_DATA = data;
+      window.APP_DATA = data;
     </script>
-    <div id="toast-container" class="fixed top-24 right-5 z-[100] flex flex-col items-end pointer-events-none *:pointer-events-auto"></div>
+    <div
+      id="toast-container"
+      class="fixed top-24 right-5 z-[100] flex flex-col items-end pointer-events-none *:pointer-events-auto"
+    >
+    </div>
 
     <Nav />
     <Hero />
 
     <!-- Services Section -->
     <section id="services" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20 reveal">
-                <span class="text-blue-600 font-bold tracking-wider text-sm uppercase mb-3 block">Expertise</span>
-                <h2 data-i18n="services.title" class="text-4xl md:text-5xl font-bold text-slate-900 mb-6"></h2>
-                <p data-i18n="services.subtitle" class="text-xl text-slate-500 max-w-2xl mx-auto"></p>
-            </div>
-            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 reveal">
+          <span
+            class="text-blue-600 font-bold tracking-wider text-sm uppercase mb-3 block"
+            >Expertise</span
+          >
+          <h2
+            data-i18n="services.title"
+            class="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
+          >
+          </h2>
+          <p
+            data-i18n="services.subtitle"
+            class="text-xl text-slate-500 max-w-2xl mx-auto"
+          >
+          </p>
         </div>
+        <div
+          id="services-grid"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+        </div>
+      </div>
     </section>
 
     <Testimonials />
@@ -61,5 +110,5 @@ data.config.googleScriptUrl = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL;
     <Footer />
 
     <script src="../scripts/main.js"></script>
-</body>
+  </body>
 </html>

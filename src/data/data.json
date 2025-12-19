@@ -25,8 +25,8 @@
         "contact": "Contact"
       },
       "hero": {
-        "badge": "⭐ Premium Mobile Service",
-        "title1": "Your Smile,",
+        "badge": "⭐ Mobile Dental Hygiene",
+        "title1": "Your Smile & Convenience",
         "title2": "Our Priority",
         "desc": "Professional dental hygiene services delivered directly to your home. Experience comfort, convenience, and quality care.",
         "btn_book": "Book Appointment",
@@ -37,52 +37,53 @@
         },
         "why_title": "Why Choose Us?",
         "features": [
-          { "icon": "ri-shield-check-line", "text": "Licensed Professionals" },
+          { "icon": "mobileCare", "text": "Convenient Mobile Care" },
           {
-            "icon": "ri-briefcase-4-line",
-            "text": "State-of-the-Art Equipment"
+            "icon": "dentist",
+            "text": "Personalized, Professional Services"
           },
-          { "icon": "ri-time-line", "text": "Flexible Scheduling" }
+          { "icon": "scheduling", "text": "Flexible Scheduling" },
+          { "icon": "billing", "text": "Simple And Convenient Billing" }
         ]
       },
       "services": {
-        "title": "Premium Treatments",
-        "subtitle": "Curated dental services designed for your comfort and health.",
+        "title": "Our Services",
+        "subtitle": "Dental hygiene services designed for your comfort and health.",
         "list": [
           {
             "title": "Check-up & Assessment",
             "desc": "Full oral health evaluation including gum health check.",
-            "icon": "ri-microscope-line",
+            "icon": "dental-checkup.svg",
             "color": "blue"
           },
           {
             "title": "Deep Scaling",
             "desc": "Ultrasonic removal of plaque and tartar buildup.",
-            "icon": "ri-tooth-line",
+            "icon": "dental-scaling.svg",
             "color": "cyan"
           },
           {
             "title": "Teeth Whitening",
             "desc": "Professional grade whitening for a brighter smile.",
-            "icon": "ri-sparkling-2-line",
+            "icon": "teeth-whitening.svg",
             "color": "indigo"
           },
           {
             "title": "Polishing",
             "desc": "Gentle air-polishing to remove surface stains.",
-            "icon": "ri-magic-line",
+            "icon": "tooth-polishing.svg",
             "color": "sky"
           },
           {
             "title": "Fluoride Therapy",
             "desc": "Enamel strengthening treatment to prevent cavities.",
-            "icon": "ri-drop-line",
+            "icon": "Fluoride.svg",
             "color": "teal"
           },
           {
             "title": "Education",
             "desc": "Personalized coaching on brushing techniques.",
-            "icon": "ri-book-open-line",
+            "icon": "education.svg",
             "color": "emerald"
           }
         ]
@@ -127,7 +128,7 @@
         "error_msg": "Connection error. Please try again."
       },
       "footer": {
-        "about_desc": "Bringing the dental clinic to the comfort of your home.",
+        "about_desc": "Bringing the dental hygiene service to the comfort of your home.",
         "links_title": "Explore",
         "contact_title": "Contact",
         "copyright": "© 2025 Mobile Dental."
@@ -159,9 +160,13 @@
         },
         "why_title": "Pourquoi Nous Choisir?",
         "features": [
-          { "icon": "ri-shield-check-line", "text": "Professionnels Agréés" },
-          { "icon": "ri-briefcase-4-line", "text": "Équipement de Pointe" },
-          { "icon": "ri-time-line", "text": "Horaires Flexibles" }
+          { "icon": "mobileCare", "text": "Soins mobiles pratiques" },
+          {
+            "icon": "dentist",
+            "text": "Services professionnels personnalisés"
+          },
+          { "icon": "scheduling", "text": "Horaires Flexibles" },
+          { "icon": "billing", "text": "Facturation simple et pratique" }
         ]
       },
       "services": {
@@ -171,37 +176,37 @@
           {
             "title": "Bilan Complet",
             "desc": "Évaluation complète de la santé bucco-dentaire.",
-            "icon": "ri-microscope-line",
+            "icon": "dental-checkup.svg",
             "color": "blue"
           },
           {
             "title": "Détartrage",
             "desc": "Élimination ultrasonique de la plaque et du tartre.",
-            "icon": "ri-tooth-line",
+            "icon": "dental-scaling.svg",
             "color": "cyan"
           },
           {
             "title": "Blanchiment",
             "desc": "Blanchiment professionnel pour un sourire éclatant.",
-            "icon": "ri-sparkling-2-line",
+            "icon": "teeth-whitening.svg",
             "color": "indigo"
           },
           {
             "title": "Polissage",
             "desc": "Polissage doux pour éliminer les taches.",
-            "icon": "ri-magic-line",
+            "icon": "tooth-polishing.svg",
             "color": "sky"
           },
           {
             "title": "Fluorure",
             "desc": "Traitement pour renforcer l'émail.",
-            "icon": "ri-drop-line",
+            "icon": "Fluoride.svg",
             "color": "teal"
           },
           {
             "title": "Éducation",
             "desc": "Conseils d'experts sur le brossage.",
-            "icon": "ri-book-open-line",
+            "icon": "education.svg",
             "color": "emerald"
           }
         ]
@@ -279,17 +284,15 @@
         "why_title": "ཅིའི་ཕྱིར་ང་ཚོ་འདེམས།",
         "features": [
           {
-            "icon": "ri-shield-check-line",
-            "text": "ཆོག་མཆན་ལྡན་པའི་མཁས་པ།"
+            "icon": "mobileCare",
+            "text": "སྟབས་བདེ་བའི་འགྲུལ་འཁོར་བདག་སྐྱོང་།"
           },
           {
-            "icon": "ri-briefcase-4-line",
-            "text": "གསར་པའི་ལག་ཆས།"
+            "icon": "dentist",
+            "text": "སྒེར་གྱི་ཆེད་ལས་ཞབས་ཞུ།"
           },
-          {
-            "icon": "ri-time-line",
-            "text": "འགྱུར་ལྡན་དུས་ཚོད་འགོད་པ།"
-          }
+          { "icon": "scheduling", "text": "འགྱུར་ལྡན་དུས་ཚོད་འགོད་པ།" },
+          { "icon": "billing", "text": "རྩིས་བདར་སྟབས་བདེ་དང་སྟབས་བདེ།" }
         ]
       },
       "services": {
@@ -299,37 +302,37 @@
           {
             "title": "ཞིབ་བཤེར་དང་བརྟག་དཔྱད།",
             "desc": "ཁ་ནང་གི་འཕྲོད་བསྟེན་ཁྱོན་ཡོངས་ཀྱི་བརྟག་དཔྱད་སྙིང་རྩ་གཞོགས་པ།",
-            "icon": "ri-microscope-line",
+            "icon": "dental-checkup.svg",
             "color": "blue"
           },
           {
             "title": "ཟབ་མོའི་གཙང་སྦྲ།",
-            "desc": "རླུང་ཐོག་གི་ཐབས་ལམ་བརྒྱུད་སོའི་ཚ་རྡུལ་བསལ་བ།",
-            "icon": "ri-tooth-line",
+            "desc": "རླུང་ཐོག་གི་ཐབས་ལམ་བརྒྱུད་སོ་དཀར་བཟོ་བ།",
+            "icon": "dental-scaling.svg",
             "color": "cyan"
           },
           {
             "title": "སོ་དཀར་བཟོ་བ།",
             "desc": "སྤྱི་ཚོགས་ཚད་ལྡན་སོ་དཀར་བྱེད་ཐབས།",
-            "icon": "ri-sparkling-2-line",
+            "icon": "teeth-whitening.svg",
             "color": "indigo"
           },
           {
             "title": "གཙང་མ་བཟོ་བ།",
             "desc": "ཇམ་པོའི་གློག་རླུང་གཙང་སྦྲས་ཕྱི་རིམ་ཚ་རྡུལ་བསལ་བ།",
-            "icon": "ri-magic-line",
+            "icon": "tooth-polishing.svg",
             "color": "sky"
           },
           {
             "title": "ཕོ་ལོ་རོ་སྨན་བཅོས།",
             "desc": "སོའི་དཔུང་པ་བརྟན་པོ་བཟོ་བའི་བཅོས་ཐབས།",
-            "icon": "ri-drop-line",
+            "icon": "Fluoride.svg",
             "color": "teal"
           },
           {
             "title": "ཤེས་རིག་སློབ་ཁྲིད།",
             "desc": "གང་ཟག་དམིགས་བསལ་སོ་བཤེར་ཐབས་ཇུས།",
-            "icon": "ri-book-open-line",
+            "icon": "education.svg",
             "color": "emerald"
           }
         ]
