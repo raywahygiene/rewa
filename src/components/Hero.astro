@@ -1,3 +1,19 @@
+---
+import MobileCare from './icons/MobileCare.astro';
+import Dentist from './icons/Dentist.astro';
+import Scheduling from './icons/Scheduling.astro';
+import Billing from './icons/Billing.astro';
+
+const { features } = Astro.props;
+
+const iconComponents = {
+  mobileCare: MobileCare,
+  dentist: Dentist,
+  scheduling: Scheduling,
+  billing: Billing,
+};
+---
+
 <section id="home" class="pt-20 relative overflow-hidden">
   <div
     class="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-500 to-blue-700 bg-gradient-animate opacity-90"
@@ -11,7 +27,9 @@
         <div class="inline-block mb-4">
           <span
             class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold border border-white/30"
-            data-i18n="hero.badge"></span>
+            data-i18n="hero.badge"
+          >
+          </span>
         </div>
         <h1
           class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
@@ -35,7 +53,8 @@
         </div>
         <div class="mt-12 flex items-center space-x-4 sm:space-x-8">
           <div>
-            <p class="text-3xl sm:text-4xl font-bold">500+</p><p
+            <p class="text-3xl sm:text-4xl font-bold">500+</p>
+            <p
               id="stat-label-1"
               class="text-sm sm:text-base text-blue-200"
             >
@@ -43,7 +62,8 @@
           </div>
           <div class="h-12 w-px bg-white/30"></div>
           <div>
-            <p class="text-3xl sm:text-4xl font-bold">100%</p><p
+            <p class="text-3xl sm:text-4xl font-bold">100%</p>
+            <p
               id="stat-label-2"
               class="text-sm sm:text-base text-blue-200"
             >
@@ -51,7 +71,8 @@
           </div>
           <div class="h-12 w-px bg-white/30"></div>
           <div>
-            <p class="text-3xl sm:text-4xl font-bold">5★</p><p
+            <p class="text-3xl sm:text-4xl font-bold">5★</p>
+            <p
               id="stat-label-3"
               class="text-sm sm:text-base text-blue-200"
             >
@@ -73,7 +94,23 @@
               class="text-2xl font-bold text-gray-800 mb-4 text-center"
             >
             </h3>
-            <div id="features-list" class="space-y-4"></div>
+            <div class="space-y-4">
+              {
+                features.map((feature) => {
+                  const Icon = iconComponents[feature.icon];
+                  return (
+                    <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl">
+                      <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center">
+                        <Icon class="w-7 h-7" />
+                      </div>
+                      <span class="text-gray-700 font-medium">
+                        {feature.text}
+                      </span>
+                    </div>
+                  );
+                })
+              }
+            </div>
           </div>
         </div>
       </div>

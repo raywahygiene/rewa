@@ -3,6 +3,7 @@ import jsonData from "../../src/data/data.json";
 import "../styles/global.css";
 import Nav from "../components/Nav.astro";
 import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
 import Testimonials from "../components/Testimonials.astro";
 import Booking from "../components/Booking.astro";
 import Footer from "../components/Footer.astro";
@@ -10,6 +11,9 @@ import Footer from "../components/Footer.astro";
 // Create a deep copy to ensure the object is mutable
 const data = JSON.parse(JSON.stringify(jsonData));
 data.config.googleScriptUrl = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL;
+
+const lang = data.config.defaultLang;
+const t = data.translations[lang];
 ---
 
 <!doctype html>
@@ -76,34 +80,9 @@ data.config.googleScriptUrl = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL;
     </div>
 
     <Nav />
-    <Hero />
+    <Hero features={t.hero.features} />
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20 reveal">
-          <span
-            class="text-blue-600 font-bold tracking-wider text-sm uppercase mb-3 block"
-            >Expertise</span
-          >
-          <h2
-            data-i18n="services.title"
-            class="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
-          >
-          </h2>
-          <p
-            data-i18n="services.subtitle"
-            class="text-xl text-slate-500 max-w-2xl mx-auto"
-          >
-          </p>
-        </div>
-        <div
-          id="services-grid"
-          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-        </div>
-      </div>
-    </section>
+    <Services services={t.services} />
 
     <Testimonials />
     <Booking />

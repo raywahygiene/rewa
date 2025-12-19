@@ -1,4 +1,3 @@
-import icons from "../utils/icons.js";
 let allData = {};
 let currentLang = "en";
 
@@ -84,8 +83,6 @@ function updateContent() {
   }
 
   // Render Lists
-  renderFeatures(t.hero.features);
-  renderServices(t.services.list);
   renderTestimonials(t.testimonials.list);
   renderFooter(t.footer, allData.config.socials, t.contact);
 
@@ -102,60 +99,6 @@ function updateContent() {
 }
 
 // 3. Render Helpers
-function renderFeatures(features) {
-  const container = document.getElementById("features-list");
-  if (!container) return;
-  container.innerHTML = features
-    .map(
-      (f) => `
-        <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl">
-            <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center">
-                <img src="${icons[`${f.icon}.svg`]}" alt="" class="w-7 h-7" />
-            </div>
-            <span class="text-gray-700 font-medium">${f.text}</span>
-        </div>
-    `
-    )
-    .join("");
-}
-
-function renderServices(services) {
-  const container = document.getElementById("services-grid");
-  if (!container) return;
-
-  const colorMap = {
-    blue: "text-blue-600 bg-blue-50 group-hover:bg-blue-600 group-hover:text-white",
-    cyan: "text-cyan-600 bg-cyan-50 group-hover:bg-cyan-600 group-hover:text-white",
-    indigo:
-      "text-indigo-600 bg-indigo-50 group-hover:bg-indigo-600 group-hover:text-white",
-    sky: "text-sky-600 bg-sky-50 group-hover:bg-sky-600 group-hover:text-white",
-    teal: "text-teal-600 bg-teal-50 group-hover:bg-teal-600 group-hover:text-white",
-    emerald:
-      "text-emerald-600 bg-emerald-50 group-hover:bg-emerald-600 group-hover:text-white",
-  };
-
-  container.innerHTML = services
-    .map((s, index) => {
-      const colorClass = colorMap[s.color] || colorMap.blue;
-      return `
-        <div class="reveal group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" style="transition-delay: ${
-          index * 50
-        }ms">
-            <div class="w-14 h-14 rounded-2xl ${colorClass} flex items-center justify-center transition-all duration-300 mb-6">
-            <img src="${
-              icons[s.icon]
-            }" alt="${s.title} icon" class="w-8 h-8" />
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">${
-              s.title
-            }</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">${s.desc}</p>
-        </div>
-    `;
-    })
-    .join("");
-}
-
 function renderTestimonials(reviews) {
     const container = document.getElementById("testimonials-container");
     if (!container) return;

@@ -1,0 +1,77 @@
+---
+import DentalCheckup from './icons/DentalCheckup.astro';
+import DentalScaling from './icons/DentalScaling.astro';
+import TeethWhitening from './icons/TeethWhitening.astro';
+import ToothPolishing from './icons/ToothPolishing.astro';
+import Fluoride from './icons/Fluoride.astro';
+import Education from './icons/Education.astro';
+
+const { services } = Astro.props;
+
+const iconComponents = {
+  'dental-checkup.svg': DentalCheckup,
+  'dental-scaling.svg': DentalScaling,
+  'teeth-whitening.svg': TeethWhitening,
+  'tooth-polishing.svg': ToothPolishing,
+  'Fluoride.svg': Fluoride,
+  'education.svg': Education,
+};
+
+const colorMap = {
+  blue: 'text-blue-600 bg-blue-50 group-hover:bg-blue-600 group-hover:text-white',
+  cyan: 'text-cyan-600 bg-cyan-50 group-hover:bg-cyan-600 group-hover:text-white',
+  indigo:
+    'text-indigo-600 bg-indigo-50 group-hover:bg-indigo-600 group-hover:text-white',
+  sky: 'text-sky-600 bg-sky-50 group-hover:bg-sky-600 group-hover:text-white',
+  teal: 'text-teal-600 bg-teal-50 group-hover:bg-teal-600 group-hover:text-white',
+  emerald:
+    'text-emerald-600 bg-emerald-50 group-hover:bg-emerald-600 group-hover:text-white',
+};
+---
+
+<section id="services" class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20 reveal">
+      <span
+        class="text-blue-600 font-bold tracking-wider text-sm uppercase mb-3 block"
+        >Expertise</span
+      >
+      <h2
+        data-i18n="services.title"
+        class="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
+      >
+        {services.title}
+      </h2>
+      <p
+        data-i18n="services.subtitle"
+        class="text-xl text-slate-500 max-w-2xl mx-auto"
+      >
+        {services.subtitle}
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        services.list.map((s, index) => {
+          const colorClass = colorMap[s.color] || colorMap.blue;
+          const Icon = iconComponents[s.icon];
+          return (
+            <div
+              class="reveal group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              style={`transition-delay: ${index * 50}ms`}
+            >
+              <div
+                class={`w-14 h-14 rounded-2xl ${colorClass} flex items-center justify-center transition-all duration-300 mb-6`}
+              >
+                <Icon class="w-8 h-8" />
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                {s.title}
+              </h3>
+              <p class="text-slate-500 text-sm leading-relaxed">{s.desc}</p>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
