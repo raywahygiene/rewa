@@ -23,8 +23,8 @@ const iconComponents = {
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
     <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="text-white reveal active">
-        <div class="inline-block mb-4">
+      <div class="text-white">
+        <div class="inline-block mb-4 reveal" style="transition-delay: 200ms">
           <span
             class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold border border-white/30"
             data-i18n="hero.badge"
@@ -32,17 +32,19 @@ const iconComponents = {
           </span>
         </div>
         <h1
-          class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight reveal"
+          style="transition-delay: 300ms"
         >
           <span data-i18n="hero.title1"></span><br />
           <span data-i18n="hero.title2" class="text-cyan-300"></span>
         </h1>
         <p
           data-i18n="hero.desc"
-          class="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed"
+          class="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed reveal"
+          style="transition-delay: 400ms"
         >
         </p>
-        <div class="flex flex-col items-center sm:flex-row gap-4">
+        <div class="flex flex-col items-center sm:flex-row gap-4 reveal" style="transition-delay: 500ms">
           <a
             href="#booking"
             class="inline-flex items-center justify-center bg-white text-blue-600 px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-blue-50 transition shadow-xl hover:shadow-2xl transform hover:scale-105"
@@ -51,7 +53,7 @@ const iconComponents = {
             <span data-i18n="hero.btn_book"></span>
           </a>
         </div>
-        <div class="mt-12 flex items-center space-x-4 sm:space-x-8">
+        <div class="mt-12 flex items-center space-x-4 sm:space-x-8 reveal" style="transition-delay: 600ms">
           <div>
             <p class="text-3xl sm:text-4xl font-bold">500+</p>
             <p

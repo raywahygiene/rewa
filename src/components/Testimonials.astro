@@ -9,7 +9,7 @@
     }
     .testimonial-card:before {
         font-family: 'Remixicon';
-        content: '\\ea12';
+        content: '\ea12';
         position: absolute;
         top: -10px;
         left: 0px;
@@ -19,11 +19,21 @@
         z-index: 1;
         opacity: 0.8;
     }
+
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    }
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 
 <section id="testimonials" class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 reveal">
+        <div class="text-center mb-16 reveal" style="transition-delay: 100ms">
             <span class="text-blue-600 font-bold tracking-wider text-sm uppercase mb-3 block">Testimonials</span>
             <h2 data-i18n="testimonials.title" class="text-4xl md:text-5xl font-bold text-slate-900 mb-6"></h2>
             <p data-i18n="testimonials.subtitle" class="text-xl text-slate-500 max-w-2xl mx-auto"></p>

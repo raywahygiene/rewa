@@ -5,7 +5,7 @@ import Logo from './icons/Logo.astro';
 <footer id="contact" class="bg-slate-900 text-slate-300 pt-20 pb-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-4 gap-12 mb-16">
-      <div class="col-span-1 md:col-span-2">
+      <div class="col-span-1 md:col-span-2 reveal" style="transition-delay: 100ms">
         <div class="flex items-center">
           <Logo class="h-10 w-auto" />
         </div>
@@ -13,7 +13,7 @@ import Logo from './icons/Logo.astro';
         </p>
         <div id="footer-socials" class="flex space-x-4"></div>
       </div>
-      <div>
+      <div class="reveal" style="transition-delay: 200ms">
         <h4
           data-i18n="footer.links_title"
           class="text-white font-bold mb-6 text-lg"
@@ -38,7 +38,7 @@ import Logo from './icons/Logo.astro';
           </li>
         </ul>
       </div>
-      <div>
+      <div class="reveal" style="transition-delay: 300ms">
         <h4
           data-i18n="footer.contact_title"
           class="text-white font-bold mb-6 text-lg"
@@ -48,7 +48,7 @@ import Logo from './icons/Logo.astro';
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-8 text-center md:text-left">
+    <div class="border-t border-slate-800 pt-8 text-center md:text-left reveal" style="transition-delay: 400ms">
       <p data-i18n="footer.copyright" class="text-slate-500 text-sm"></p>
     </div>
   </div>

@@ -142,7 +142,7 @@ function renderFooter(footerData, socials, contactData) {
     sContainer.innerHTML = socials
       .map(
         (s) => `
-            <a href="${s.link}" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition">
+            <a href="${s.link}" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition transform hover:scale-110">
                 <i class="${s.icon} text-lg"></i>
             </a>
         `
